@@ -1,13 +1,14 @@
+import { FiDownload } from 'react-icons/fi'
+
 import Photo from '@/components/Photo'
 import Social from '@/components/Social'
+import Stats from '@/components/Stats'
 import { Button } from '@/components/ui/button'
-import { FiDownload } from 'react-icons/fi'
 
 const Home = () => {
 	return (
 		<section className='h-full'>
 			<div className='container mx-auto h-full'>
-				home page
 				<div className='flex flex-col xl:flex-row justify-between items-center xl:pt-8 xl:pb-24'>
 					{/* text */}
 					<div className='text-center xl:text-left order-2 xl:order-none'>
@@ -44,6 +45,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
+			<Stats />
 		</section>
 	)
 }
