@@ -36,6 +36,7 @@ const Services = () => {
 						<div
 							key={index}
 							className='flex gap-6 flex-1 flex-col justify-center group '>
+								{/* number and link */}
 							<div
 								className='flex
 								justify-between
@@ -45,12 +46,12 @@ const Services = () => {
 								</div>
 								<Link
 									href={service.href}
-									className='w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent-hover flex justify-center items-center hover:rotate-45 transition-all duration-500 '>
+									className='w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent flex justify-center items-center hover:rotate-45 transition-all duration-500 '>
 									<BsArrowDownRight className='text-3xl text-primary' />
 								</Link>
 							</div>
 							{/* title */}
-							<h2 className='text-[42px] font-bold leading-none text-white  group-hover:text-accent-hover transition-all duration-500'>
+							<h2 className='text-[42px] font-bold leading-none text-white  group-hover:text-accent transition-all duration-500'>
 								{service.title}
 							</h2>
 							{/* description */}

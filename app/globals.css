@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --radius: 12px;
+}
+
 @layer base {
 body {
   @apply font-primary bg-primary text-white leading-loose;
@@ -21,7 +25,7 @@ body {
 }
 
 .text-outline-hover{
-  -webkit-text-stroke: 1px #f8a905;
+  -webkit-text-stroke: 1px #c3a785;
 }
 
 }

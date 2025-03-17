@@ -1,5 +1,5 @@
 'use client'
-import { Opacity } from '@material-ui/icons'
+
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 

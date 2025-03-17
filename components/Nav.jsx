@@ -1,6 +1,5 @@
 'use client'
 
-import { capitalize } from '@material-ui/core'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -38,7 +37,7 @@ const Nav = () => {
 					key={index}
 					className={`${
 						pathname == link.path && 'text-accent border-accent border-b-2'
-					} capitalize font-medium hover:text-accent-hover transition-all `}>
+					} capitalize font-medium hover:text-accent transition-all `}>
 					{link.name}
 				</Link>
 			))}
