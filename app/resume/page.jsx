@@ -22,7 +22,7 @@ import { motion } from "framer-motion";
 
 const about = {
   title: "About me",
-  description: "Hi, I am Priya. ",
+  description: "I am a passionate and driven developer with a commitment to creating scalable, user-centric applications. I thrive in fast-paced environments, always eager to solve complex problems and improve the performance and usability of the applications I work on. I am continuously learning and staying updated with the latest technologies and industry trends to ensure that I deliver cutting-edge solutions. I value collaboration and enjoy working with cross-functional teams to bring innovative ideas to life. My goal is to build applications that not only meet user needs but also offer exceptional and seamless experiences.",
   info: [
     {
       fieldName: "Name",
@@ -53,7 +53,7 @@ const experience = {
   icon: "",
   title: "My Experience",
   description:
-    "I have over 5 years of experience working as a front-end developer with react and react native being my core technologies.",
+    "With over 5 years of experience as a Front-end Software Developer, I have successfully contributed to developing and deploying cross-platform web and mobile applications using React and React Native. In my current role at Cigna-Evernorth, I have worked on high-impact projects like the Pharmacy Application and Behavioral Health Application, optimizing app performance, enhancing user experiences, and integrating advanced features. Previously, at Infosys, I developed a Customer Account Portal, a real-time dashboard for users to view bills, track data usage, manage plans, and access support. I optimized UI components using React Hooks (e.g., useMemo, useCallback, and React.memo) and ensured cross-browser compatibility and responsive design, providing a smooth experience for 98% of users across different platforms. My experience spans across designing intuitive UIs, managing state with Redux and React Context API, and implementing efficient data-fetching techniques with React Query.",
   items: [
     {
       company: "Cigna-Evernorth",
@@ -72,20 +72,19 @@ const experience = {
 const education = {
   icon: "",
   title: "My Education",
-  description: "I am a graduate. I did my Bachelor's in india from an autonomous insitution. I specialized in electrical and electronics.",
+  description: "I completed my Bachelor of Technology (B.Tech) degree from GVPCE in India, where I gained a solid foundation in computer science. During my time at the college, I developed a strong understanding of core programming concepts, data structures, algorithms, and software development methodologies. Additionally, I actively participated in various technical workshops and coding competitions, further expanding my knowledge and interest in web and mobile technologies.",
   items: [
     {
-      institution: "Gayatri Vidya Parishad College of Engineering",
+      institution: "Gayatri Vidya Parishad College of Engineering, India",
       degree: `Bachelor's of Technology`,
       duration: "2016-2020",
-      Location: "India",
     },
   ],
 };
 
 const skills = {
   title: "My Skills",
-  description: "Over the years, I have learnt so many different things about front-end development, libraries, tools, techniques etc. Here are the major skillset of mine.",
+  description: "I possess a strong foundation in JavaScript, TypeScript, React.js, and React Native, with proficiency in Next.js and Tailwind CSS for building modern, responsive web and mobile applications. I have extensive experience in state management using Redux and React Context API, as well as working with different API's, Fetch, Axios, GraphQL, and React Query for smooth data handling. Additionally, I’m skilled in testing and debugging using Jest, React Testing Library, and tools like Reactotron and Flipper to ensure high-quality code. I am also well-versed in version control, build tools, and CI/CD practices using Git, GitHub, and Jenkins.",
   skillsList: [
     {
       icon: <FaHtml5 />,
