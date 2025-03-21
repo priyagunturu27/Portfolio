@@ -156,7 +156,6 @@ const Work = () => {
               <WorkSliderBtns
                 containerStyles="flex absolute right-0 bottom-[calc(80%_-_30px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none gap-6"
                 btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
-                disabled=''
                 projects={projects}
                 project={project}
               />

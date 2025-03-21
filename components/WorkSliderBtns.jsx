@@ -12,11 +12,11 @@ const WorkSliderBtns = ({containerStyles,btnStyles,projects,project}) => {
  console.log(projects.length.toString())
   return (
     <div className={containerStyles }>
-      <button className={ `${btnStyles} ${project.num=='01' ? 'bg-[#40382f] hover:bg-[#40382f]':''}`} onClick={()=>{swiper.slidePrev()}} disabled={project.num=='01'}>
+      <button className={`${btnStyles} ${project.num==='01' ? 'disabled:bg-[#40382f] disabled:opacity-50':''}`} onClick={()=>{swiper.slidePrev()}} disabled={project.num==='01'}>
         <PiCaretLeftBold/>
       </button>
 
-      <button className={ `${btnStyles} ${project.num[1]==projects.length.toString() ? 'bg-[#40382f] hover:bg-[#40382f]' : ''}`} onClick={()=>{swiper.slideNext()}} disabled={project.num[1]==projects.length.toString()}>
+      <button className={`${btnStyles} ${project.num[1]===projects.length.toString() ? 'disabled:bg-[#40382f] disabled:opacity-50' : ''}`} onClick={()=>{swiper.slideNext()}} disabled={project.num[1]===projects.length.toString()}>
         <PiCaretRightBold/>
       </button>
     </div>
