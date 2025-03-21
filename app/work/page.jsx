@@ -85,11 +85,13 @@ const projects = [
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
+  
 
   const handleSlideChange = (swiper) => {
     const currentIndex = swiper.activeIndex;
     setProject(projects[currentIndex]);
   };
+  
 
   return (
     <motion.section
@@ -118,19 +120,61 @@ const Work = () => {
               {/* description */}
               <p className="text-white/60">{project.description}</p>
 
-              {/* tech stack */}
+              
 
-              <ul>
+          
+
+             
+            </div>
+          </div>
+
+          {/* slides */}
+          <div className="w-full xl:w-[50%] ">
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={10}
+              className="mb-12 gap-10"
+              onSlideChange={handleSlideChange}
+            >
+              {projects.map((item, index) => (
+                <SwiperSlide key={index} className="w-full">
+                  <div className="h-[460px] relative flex justify-center items-center group">
+                    {/* image */}
+                    <div className="relative w-full h-full ">
+						
+                      <Image
+                        src={item.image}
+                        alt=""
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+              {/* slider button */}
+              <WorkSliderBtns
+                containerStyles="flex absolute right-0 bottom-[calc(80%_-_30px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none gap-6"
+                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                disabled=''
+                projects={projects}
+                project={project}
+              />
+            </Swiper>
+            {/* tech stack */}
+            <div className="pb-4 xl:w-[50%]">
+              <span className="text-xl text-white/60 text-center">TechStack</span>
+             <ul className="grid gap-x-36 grid-cols-2">
                 {project.stack.map((item, index) => (
                   <li key={index} className="text-accent text-xl">
                     {item.name}
-                    {index !== project.stack.length - 1 && ","}
+                    {/* {index !== project.stack.length - 1 && ","} */}
                   </li>
                 ))}
               </ul>
-
-              {/* border */}
-              <div className=" border-white/20 border"></div>
+            </div>
+             {/* border */}
+             <div className="border-white/20 border mb-4"></div>
               <div className="flex items-center gap-4">
                 {/* buttons */}
                 {/* <Link href={project.live}>
@@ -160,40 +204,9 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
               </div>
-            </div>
+           
           </div>
 
-          {/* slides */}
-          <div className="w-full xl:w-[50%]">
-            <Swiper
-              slidesPerView={1}
-              spaceBetween={10}
-              className="mb-12 gap-10"
-              onSlideChange={handleSlideChange}
-            >
-              {projects.map((item, index) => (
-                <SwiperSlide key={index} className="w-full">
-                  <div className="h-[460px] relative flex justify-center items-center group">
-                    {/* image */}
-                    <div className="relative w-full h-full ">
-						
-                      <Image
-                        src={item.image}
-                        alt=""
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-              {/* slider button */}
-              <WorkSliderBtns
-                containerStyles="flex absolute right-0 bottom-[calc(80%_-_30px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none gap-6"
-                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
-              />
-            </Swiper>
-          </div>
         </div>
       </div>
     </motion.section>

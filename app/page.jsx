@@ -9,14 +9,15 @@ const Home = () => {
 	return (
 		<section className='h-full'>
 			<div className='container mx-auto h-full'>
-				<div className='flex flex-col xl:flex-row justify-between items-center xl:pt-8 xl:pb-24'>
+				<div className='flex flex-col xl:flex-row justify-between items-center xl:pb-24'>
 					{/* text */}
 					<div className='text-center xl:text-left order-2 xl:order-none'>
-						<span className='text-xl'>Software Developer</span>
-						<h1 className='h1'>
-							Hello I'm <br />{' '}
+					<span className='h3 text-white/100'>Front-End Developer</span>
+						<h1 className='h2 text-white/80'>
+							Hello I'm <br/>
 							<span className='text-accent'>Priya Gunturu</span>
 						</h1>
+						
 						<p className='max-w-[500px] mb-9 text-white/80'>
 							I'm an experienced front-end developer building fast, scalable and
 							user-friendly web & mobile applications.

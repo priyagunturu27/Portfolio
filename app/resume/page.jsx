@@ -1,14 +1,15 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma,FaGithub,FaJenkins } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiNextdotjs,
   SiTypescript,
   SiReactquery,
   SiReactrouter,
-  SiRedux,
+  SiRedux,SiWebpack,SiJest
 } from "react-icons/si";
+
 
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -41,10 +42,6 @@ const about = {
 	{
 		fieldName: "Email",
 		fieldValue: "gpriya.dev27@gmail.com",
-	  },
-	  {
-		fieldName: "Location",
-		fieldValue: "Minneapolis, MN",
 	  },
   ],
 };
@@ -122,6 +119,31 @@ const skills = {
       icon: <SiReactrouter />,
       name: "react router",
     },
+    {
+      icon: <SiRedux />,
+      name: "redux",
+    },
+    {
+      icon: <SiJest/>,
+      name: "jest",
+    },
+    {
+      icon: <FaGithub />,
+      name: "github",
+    },
+    {
+      icon: <SiWebpack/>,
+      name: "webpack",
+    },
+    {
+      icon: <FaFigma/>,
+      name: "figma",
+    },
+    {
+      icon: <FaJenkins/>,
+      name: "jenkins",
+    },
+   
   ],
 };
 

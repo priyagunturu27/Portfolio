@@ -1,11 +1,15 @@
+'use client'
+import { useState } from 'react'
 import MobileNav from './MobileNav'
 import Nav from './Nav'
 import { Button } from './ui/button'
-
-// *components
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const Header = () => {
+	const [clicked,setClicked]= useState(false)
+	const pathname= usePathname()
+	
 	return (
 		<header className='py-8 xl:py-12 text-white'>
 			<div className='container mx-auto flex justify-between items-center'>
@@ -20,7 +24,7 @@ const Header = () => {
 				<div className='hidden xl:flex items-center gap-8'>
 					<Nav />
 					<Link href='/contact'>
-						<Button>Hire Me</Button>
+						<Button className={`${pathname==='/contact' ? 'bg-accent-hover hover:bg-accent-hover ' : ''}`}>Hire Me</Button>
 					</Link>
 				</div>
 
