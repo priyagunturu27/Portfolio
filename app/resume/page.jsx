@@ -36,7 +36,7 @@ const about = {
     
     {
       fieldName: "Experience",
-      fieldValue: "5+ Years",
+      fieldValue: "4+ Years",
     },
    
 	{
@@ -50,17 +50,22 @@ const experience = {
   icon: "",
   title: "My Experience",
   description:
-    "With over 5 years of experience as a Front-end Software Developer, I have successfully contributed to developing and deploying cross-platform web and mobile applications using React and React Native. In my current role at Cigna-Evernorth, I have worked on high-impact projects like the Pharmacy Application and Behavioral Health Application, optimizing app performance, enhancing user experiences, and integrating advanced features. Previously, at Infosys, I developed a Customer Account Portal, a real-time dashboard for users to view bills, track data usage, manage plans, and access support. I optimized UI components using React Hooks (e.g., useMemo, useCallback, and React.memo) and ensured cross-browser compatibility and responsive design, providing a smooth experience for 98% of users across different platforms. My experience spans across designing intuitive UIs, managing state with Redux and React Context API, and implementing efficient data-fetching techniques with React Query.",
+    "With over 4 years of experience as a Front-end Software Developer, I have successfully contributed to developing and deploying cross-platform web and mobile applications using React and React Native. In my current role at Cigna-Evernorth, I have worked on high-impact projects like the Pharmacy Application and Behavioral Health Application, optimizing app performance, enhancing user experiences, and integrating advanced features. Previously, at Infosys, I developed a Customer Account Portal, a real-time dashboard for users to view bills, track data usage, manage plans, and access support. I ensured cross-browser compatibility and responsive design, providing a smooth experience for 98% of users across different platforms. My experience spans across designing intuitive UIs, managing state with Redux and React Context API, and implementing efficient data-fetching techniques with React Query.",
   items: [
+    {
+      company: "Wells Fargo",
+      position: "Software Engineer",
+      duration: "May 2025-Present",
+    },
     {
       company: "Cigna-Evernorth",
       position: "Software Developer",
-      duration: "2022-Present",
+      duration: "Jan 2023-Apr 2025",
     },
     {
       company: "Infosys",
       position: "Systems Engineer",
-      duration: "2019-2022",
+      duration: "Feb 2021-July 2022",
     },
 	
   ],
